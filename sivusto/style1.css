@@ -1,0 +1,254 @@
+body{
+    margin:0;
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    
+}
+
+.inv{ /* näkymätön laatikko, linkki */
+    width: 320px;
+    height: 270px;
+    position: absolute;
+    top: 3330px;
+    color: aqua;
+    left: 750px;
+    z-index: 2;
+    
+}
+
+#tvscreen{
+    background-color: black;
+    width:400px;
+    height: 300px;
+    position: absolute;
+    top: 00px;
+    left: 20px;
+    z-index: -1;
+    
+}
+
+
+#tvtex{
+    font-size: 100px;
+    z-index: -1;
+    color: black;
+    position: absolute;
+    top: 90;
+    left:90;
+}
+
+#tv{
+    position: absolute;
+    left: 710px;
+    top: 3300px;
+    z-index: 1;
+}
+#tvbox{
+    background-color:black;
+    width:100px;
+    height:100px;
+    position: absolute;
+    
+}
+
+
+#menu{ /*navigaatio palkki */
+    position: fixed;
+    top:50px;
+    width:100%;
+}
+#leftoptions{ 
+    height: 30px;
+    width: 40%;
+    background-color: #222;
+    border-radius: 0px 20px 20px 0px;
+    float: left;
+    margin-left: 
+}
+#rightoptions{
+    height: 30px;
+    width: 40%;
+    background-color: #222;
+    border-radius: 20px 0px 0px 20px;
+    float:right;
+}
+a{
+    font-family: arial black;
+    font-size: 20px;
+    color:white;
+    text-decoration: none;
+    margin-left:210px;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    width:1px;
+    background-color: blueviolet;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: black;
+}
+
+#glasses{ /*silmälasit videolla */
+    position: absolute;
+    top:1080px;
+    left: 20%;
+    transform: translate (-50%,-50%);
+    z-index: 9;
+}
+#rightGlass, #leftGlass{
+    height: 200px;
+    width: 600px;
+    position: absolute;
+    top:132.9%;
+    left: 38.5%;
+    color: aquamarine;
+    -webkit-clip-path:polygon(92% 14%, 100% 90%, 99% 7%, 90% 84%, 86% 94%, 85% 97%, 61% 98%, 54% 86%, 51% 69%, 49% 69%, 49% 46%,  50% 14%, 60% 11%, 69% 5%, 77% 3%, 87% 4%);
+    overflow: hidden;
+}
+#leftGlass{
+    left: 626px;
+    transform: rotateY(180deg);
+}
+
+#box{
+    height: 100vh;
+    width: 100%;
+    background-image: url(space.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box1{
+    height: 100vh;
+    width: 100%;
+    background-image: url(space1.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box2{
+    height: 100vh;
+    width: 100%;
+    background-image: url(space2.jpeg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+#box3{
+    height: 100vh;
+    width: 100%;
+    background-image: url(space4.jpg);
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+
+
+
+.glitch{ /* yolo */
+    position: relative;
+    top:35%;
+    left: 50px;
+    margin: 0 auto;
+    color:black;
+    font-size: 80px;
+    font-family: verdana;
+    font-weight: 600;
+    
+    text-align: center;
+    text-transform: uppercase;
+}
+/* glitch */
+.glitch:before, .glitch:after{
+    content: "Play";
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+    
+}
+
+.glitch:before{
+    left:8px;
+    text-shadow: 2px 0 #00ffea;
+    animation: effect 3s infinite ease;
+}
+
+
+.glitch:after{
+    left:4px;
+    text-shadow: -2px 0 #00ffea;
+    animation: effect 2s infinite ease;
+}
+
+@-webkit-keyframes effect{
+    0%{
+        clip:rect(55px,9999px,56px,0);
+    }
+     5%{
+        clip:rect(47px,9999px,30px,0);
+    }
+     10%{
+        clip:rect(33px,9999px,36px,0);
+    }
+     15%{
+        clip:rect(35px,9999px,9px,0);
+    }
+     20%{
+        clip:rect(63px,9999px,59px,0);
+    }
+     25%{
+        clip:rect(96px,9999px,98px,0);
+    }
+     30%{
+        clip:rect(48px,9999px,77px,0);
+    }
+     35%{
+        clip:rect(50px,9999px,34px,0);
+    }
+     40%{
+        clip:rect(60px,9999px,72px,0);
+    }
+    45%{
+        clip:rect(10px,9999px,81px,0);
+    }
+    50%{
+        clip:rect(2px,9999px,60px,0);
+    }
+    55%{
+        clip:rect(23px,9999px,89px,0);
+    }
+    60%{
+        clip:rect(76px,9999px,91px,0);
+    }
+    65%{
+        clip:rect(62px,9999px,30px,0);
+    }
+    70%{
+        clip:rect(60px,9999px,73px,0);
+    }
+    75%{
+        clip:rect(60px,9999px,87px,0);
+    }
+    80%{
+        clip:rect(2px,9999px,15px,0);
+    }
+    85%{
+        clip:rect(28px,9999px,82px,0);
+    }
+    90%{
+        clip:rect(73px,9999px,50px,0);
+    }
+    95%{
+        clip:rect(10px,9999px,81px,0);
+    }
+    100%{
+        clip:rect(7px,9999px,52px,0);
+    }

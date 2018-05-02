@@ -1,0 +1,18 @@
+$(document).ready(function(){
+    $("#link").click(function(){
+        $path=$("#box").offset().top;
+        $('body').animate({scrollTop:$path},1000);
+    });
+     $("#link1").click(function(){
+        $path=$("#box1").offset().top;
+        $('body').animate({scrollTop:$path},1000);
+    });
+     $("#link2").click(function(){
+        $path=$("#box2").offset().top;
+        $('body').animate({scrollTop:$path},1000);
+    });
+     $("#link3").click(function(){
+        $path=$("#box3").offset().top;
+        $('body').animate({scrollTop:$path},1000);
+    });
+});
